@@ -1,3 +1,9 @@
+<div align="center">
+
+<img src="assets/pix-relay-banner.png" alt="Pix Relay — Private Wi-Fi Sync for Your Backup Pixel" width="820" />
+
+</div>
+
 # Pix Relay — Auto Photo Sync (Android)
 
 Automatically back up photos and videos from your daily phone to your Pixel over local Wi-Fi — **zero cloud middleman, zero mobile data, and encrypted end-to-end on your home network**.
