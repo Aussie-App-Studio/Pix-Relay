@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pix Relay — Auto Photo Sync for Android</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --badge-bg: #dbeafe;
+      --badge-text: #1e40af;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1120;
+        --card: #111827;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --border: #1e293b;
+        --accent: #3b82f6;
+        --accent-hover: #60a5fa;
+        --badge-bg: #1e3a8a;
+        --badge-text: #bfdbfe;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 24px 16px 56px;
+    }
+    .container { max-width: 760px; margin: 0 auto; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.9rem; line-height: 1.25; }
+    h2 { margin-top: 0; font-size: 1.25rem; }
+    p { color: var(--muted); }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 10px;
+      margin-top: 8px;
+      margin-right: 10px;
+    }
+    .btn:hover { background: var(--accent-hover); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { background: var(--border); }
+    ol { padding-left: 20px; color: var(--muted); }
+    li { margin-bottom: 10px; }
+    strong { color: var(--text); }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.875rem;
+      margin-top: 28px;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <span class="badge">Android App &middot; Local Wi-Fi Sync</span>
+      <h1>Pix Relay: Auto Photo Sync</h1>
+      <p>
+        Automatically transfer photos and videos from your daily phone to your Backup Pixel over local Wi-Fi —
+        encrypted end-to-end, with zero cloud middleman and zero mobile data usage.
+      </p>
+      <a class="btn" href="https://github.com/Aussie-App-Studio/Pix-Relay/releases/latest">Download Latest APK</a>
+      <a class="btn btn-secondary" href="./privacy-policy.html">Privacy Policy</a>
+    </section>
+
+    <section class="card">
+      <h2>How to Install on Your Phone</h2>
+      <ol>
+        <li>Tap <strong>Download Latest APK</strong> above and select <strong>PixRelay-v1.0.0.apk</strong> under Assets.</li>
+        <li>Open the downloaded APK from your browser downloads or <strong>Files</strong> app.</li>
+        <li>If prompted, tap <strong>Settings</strong> and turn on <strong>Allow from this source</strong>, then tap <strong>Install</strong>.</li>
+        <li>Open <strong>Pix Relay</strong> on your Backup Pixel (choose <strong>Receiver</strong>) and on your daily phone (choose <strong>Sender</strong>), connect both to the same Wi-Fi, and scan the QR code in the <strong>Pairing</strong> tab.</li>
+      </ol>
+    </section>
+
+    <footer>
+      &copy; 2026 Aussie App Studio &middot; Proprietary Software &middot;
+      <a href="./privacy-policy.html">Privacy Policy</a> &middot;
+      <a href="https://github.com/Aussie-App-Studio/Pix-Relay">GitHub Releases</a>
+    </footer>
+  </main>
+</body>
+</html>
